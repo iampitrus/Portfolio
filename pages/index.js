@@ -14,6 +14,13 @@ export default function Home() {
           name='description'
           content='Frontend Developer portfolio website'
         />
+        <link
+          rel='preload'
+          href='/fonts/microgme-webfont.woff2'
+          as='font'
+          type='font/woff2'
+          crossOrigin='anonymous'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
