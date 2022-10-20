@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'microgrammadmedextregular', serif;
-  src: url('/fonts/microgme-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+@layer base {
+  @font-face {
+    font-family: 'microgrammadmedextregular', serif;
+    src: url('/fonts/microgme-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 @layer components {
@@ -16,6 +18,11 @@
   .container-xy {
     @apply px-36 py-16;
   }
+}
+
+#about {
+  background-image: url('/bg-left.png');
+  background-repeat: no-repeat;
 }
 
 .about_info p {

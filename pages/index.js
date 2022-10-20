@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ogbonnaya Peter</title>
+        <title>Peter</title>
         <meta
           name='description'
           content='Frontend Developer portfolio website'
