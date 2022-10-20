@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Stack from './Stack';
 
 function Title() {
   return (
@@ -23,21 +24,26 @@ function Title() {
               Connect with me on Social Media:
             </p>
             <div className='w-full flex justify-between'>
-              <Image src={'/github.svg'} alt='github' width={36} height={36} />
               <Image
-                src={'/linkedIn.svg'}
+                src={'/svg/github.svg'}
+                alt='github'
+                width={36}
+                height={36}
+              />
+              <Image
+                src={'/svg/linkedIn.svg'}
                 alt='linkedIn'
                 width={36}
                 height={36}
               />
               <Image
-                src={'/twitter.svg'}
+                src={'/svg/twitter.svg'}
                 alt='twitter'
                 width={36}
                 height={36}
               />
               <Image
-                src={'/instagram.svg'}
+                src={'/svg/instagram.svg'}
                 alt='instagram'
                 width={36}
                 height={36}
@@ -52,7 +58,8 @@ function Title() {
       </div>
 
       {/* Tech Stack */}
-      <div className='text-center flex justify-center items-center bg-lighterBlue py-6'>
+      <Stack />
+      {/* <div className='text-center flex justify-center items-center bg-lighterBlue py-6'>
         <p className='text-gray-400 pr-10'>I work with:</p>
         <div className='flex gap-11'>
           <Image
@@ -72,7 +79,7 @@ function Title() {
           />
         </div>
         <p className='text-gray-400 pl-10'>and many more tools...</p>
-      </div>
+      </div> */}
     </section>
   );
 }
