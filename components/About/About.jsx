@@ -3,17 +3,17 @@ import Image from 'next/image';
 function About() {
   return (
     <section id='about' className='bg-lighterBlue container-xy'>
-      <h2 className='text-left'>
+      <h2 className='text-left subheading text-black'>
         Here to Make Your Websites Look Elegant And Stylish
       </h2>
       <div className='flex justify-between'>
-        <Image
+        {/* <Image
           src={'/profile_image.png'}
           alt='Peter'
           width={463}
           height={481}
-        />
-        <div className='text-sm about_info'>
+        /> */}
+        <div className='text-sm [&>p]:mb-4'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             assumenda explicabo quidem voluptate?

@@ -18,7 +18,7 @@ export default function Stack() {
     'typescript',
   ];
   return (
-    <div className='py-6 bg-lighterBlue'>
+    <div className='md:py-6 py-3  bg-lighterBlue'>
       <Splide
         options={{
           type: 'loop',
@@ -39,7 +39,7 @@ export default function Stack() {
           <SplideSlide key={index}>
             <div className='flex flex-col items-center g-4'>
               <object data={`/svg/${name}.svg`} name={name} height={50} />
-              <p className='uppercase text-sm'>{name}</p>
+              <p className='capitalize text-sm'>{name}</p>
             </div>
           </SplideSlide>
         ))}
