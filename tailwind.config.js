@@ -10,17 +10,7 @@ module.exports = {
         sans: ['microgrammadmedextregular', 'Helvetica'],
         myfont: 'microgrammadmedextregular',
       },
-      backgroundImage: {
-        'hero-pattern': "url('/herobg.png')",
-        'pattern-left': "url('/bg-left.png')",
-        'pattern-right': "url('/bg-right.png')",
-      },
-      backgroundColor: {
-        darkBlue: '#0f172a',
-        lightBlue: '#06b6d4',
-        lighterBlue: '#effdff',
-      },
-      textColor: {
+      colors: {
         darkBlue: '#0f172a',
         lightBlue: '#06b6d4',
         lighterBlue: '#effdff',

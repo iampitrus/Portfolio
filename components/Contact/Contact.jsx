@@ -1,16 +1,31 @@
 function Contact() {
   return (
-    <section id='contact' className='bg-darkBlue container-xy'>
-      <h3 className='subheading text-white text-center'>
+    <section
+      id='contact'
+      className='bg-darkBlue container-xy flex flex-col items-center'
+    >
+      <h3 className='subheading text-left text-white sm:text-center'>
         Have a Project in Mind?
       </h3>
-      <h4>Get in Touch</h4>
-      <form action='post'>
-        <input type='text' name='firstName' placeholder='Firstname' />
-        <input type='text' name='firstName' placeholder='Lastname' />
-        <input type='text' name='firstName' placeholder='Mobile Number' />
-        <input type='text' name='firstName' placeholder='Email Address' />
-      </form>
+      <div className='md:mr-[-20%] mb-24'>
+        <h4 className='text-white text-2xl mb-9'>Get in Touch</h4>
+        <form className='grid gap-12 text-gray-400' action='post'>
+          <legend className='flex flex-wrap gap-10'>
+            <input type='text' name='firstName' placeholder='Firstname' />
+            <input type='text' name='firstName' placeholder='Lastname' />
+          </legend>
+          <input
+            className='w-fit'
+            type='text'
+            name='firstName'
+            placeholder='Email Address'
+          />
+          <input type='text' name='firstName' placeholder='Message' />
+          <button type='submit' className='text-left outline-btn'>
+            Send
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

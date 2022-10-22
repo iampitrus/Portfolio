@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import styles from '../styles/Navbar.module.css';
+import styles from '../../styles/Navbar.module.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);

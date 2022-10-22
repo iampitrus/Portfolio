@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Stack from './Stack';
+import Stack from '../Stack/Stack';
 
 function Title() {
   return (
@@ -16,9 +16,11 @@ function Title() {
             I Build and Deploy interactive user-interface that runs on the web,
             what we call websites
           </p>
-          <button className='outline-btn my-16'>DOWNLOAD MY CV HERE</button>
-          <div className='w-64'>
-            <p className='text-gray-500 mb-2'>
+          <button className='outline-btn my-6 md:my-16'>
+            DOWNLOAD MY CV HERE
+          </button>
+          <div className='w-fit'>
+            <p className='text-sm text-gray-500 mb-2'>
               Connect with me on Social Media:
             </p>
             <div className='w-full flex justify-between'>
@@ -50,7 +52,7 @@ function Title() {
           </div>
         </div>
         {/* Hero image */}
-        <div className='absolute bottom-16 right-2'>
+        <div className='lg:absolute lg:bottom-16 lg:right-2'>
           <Image src={'/Hero_img.png'} alt='hero' width={655} height={548.29} />
         </div>
       </div>
