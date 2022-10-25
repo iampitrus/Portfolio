@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from '../../styles/Navbar.module.css';
@@ -17,18 +18,18 @@ function Navbar() {
         onClick={(e) => e.stopPropagation()}
       >
         <div className={styles.navContainer}>
-          <a href='#' className={styles.navLogo}>
-            PitaKodz
-          </a>
+          <Link href='/'>
+            <a className={styles.navLogo}>PitaKodz</a>
+          </Link>
           <ul
             className={
               click ? styles.navMenu + ' ' + styles.active : styles.navMenu
             }
           >
             <li className={styles.navItem}>
-              <a href='#' onClick={click ? handleClick : null}>
+              <Link href='/' onClick={click ? handleClick : null}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href='#about' onClick={click ? handleClick : null}>
@@ -36,9 +37,9 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href='#projects' onClick={click ? handleClick : null}>
+              <Link href='/projects' onClick={click ? handleClick : null}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
               <a
