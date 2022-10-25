@@ -6,9 +6,9 @@ function Title() {
     <section id='home'>
       <div className='w-full relative pt-[7%] pb-16 container-x bg-darkBlue'>
         <div className='flex flex-col items-center lg:items-start text-center lg:text-left'>
-          <h1 className='p-0 text-3xl md:text-6xl text-white leading-tight '>
+          <h1 className='p-0 text-4xl md:text-6xl text-white leading-tight md:leading-[1.3]'>
             Hey, <br /> I am
-            <span className='text-lightBlue'> Peter.</span> <br /> Front End
+            <span className='text-lightBlue'> Peter,</span> <br /> Front End
             Developer.
           </h1>
 
@@ -52,7 +52,7 @@ function Title() {
           </div>
         </div>
         {/* Hero image */}
-        <div className='lg:absolute lg:bottom-16 lg:right-2'>
+        <div className='xl:absolute lg:bottom-16 lg:right-2'>
           <Image src={'/Hero_img.png'} alt='hero' width={655} height={548.29} />
         </div>
       </div>
