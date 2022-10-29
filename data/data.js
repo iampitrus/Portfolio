@@ -62,3 +62,5 @@ export const projects = [
     stack: 'Next.js, Tailwind Css',
   },
 ];
+
+const test = [2, 4, 5, 6, 7, 2, 4];
