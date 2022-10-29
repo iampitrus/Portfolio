@@ -16,9 +16,11 @@ function Title() {
             I Build and Deploy interactive user-interface that runs on the web,
             what we call websites
           </p>
-          <button className='outline-btn my-6 md:my-16'>
-            DOWNLOAD MY CV HERE
-          </button>
+          <a href='#contact'>
+            <button className='outline-btn w-[250px] my-6 md:my-16'>
+              Let&apos;s Talk
+            </button>
+          </a>
           <div className='w-fit'>
             <p className='text-sm text-gray-500 mb-2'>
               Connect with me on Social Media:

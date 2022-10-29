@@ -15,23 +15,27 @@
 
 @layer components {
   .container-x {
-    @apply md:px-[15%] px-4;
+    @apply md:px-[12%] px-4;
   }
   .container-xy {
-    @apply md:px-[15%] px-4 py-16 md:py-24;
+    @apply md:px-[12%] px-4 py-16 md:py-24;
   }
   .gray {
     @apply text-gray-600;
   }
   .outline-btn {
-    @apply py-2 scale-50 md:scale-100 px-4 rounded-3xl border-2 border-white w-fit text-white hover:border-lightBlue hover:text-lightBlue transition-colors;
+    @apply py-2 scale-75 md:scale-100 px-4 rounded-3xl border-2 border-white w-fit text-white hover:border-lightBlue hover:text-lightBlue transition-colors;
   }
   .subheading {
     @apply text-4xl mb-8;
   }
   .card {
-    @apply flex items-center flex-col relative cursor-pointer;
+    @apply flex items-center flex-col relative cursor-pointer w-[350px];
   }
+}
+
+.project_card:nth-child(2n) {
+  flex-direction: column-reverse;
 }
 
 input {
@@ -52,7 +56,8 @@ input:focus {
   width: 100%;
   height: 100%;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .card:after {
   opacity: 0;
@@ -60,6 +65,7 @@ input:focus {
   position: absolute;
   top: 42%;
   left: 42%;
+  z-index: 10;
   transition: 0.5s;
 }
 .card:hover.card::before,
