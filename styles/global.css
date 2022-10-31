@@ -34,10 +34,6 @@
   }
 }
 
-.project_card:nth-child(2n) {
-  flex-direction: column-reverse;
-}
-
 input {
   background: transparent;
   border-bottom: 2px solid #fff;
