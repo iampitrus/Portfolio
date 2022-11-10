@@ -11,7 +11,7 @@ function Contact() {
         'service_35gr5gc',
         'template_3ik942r',
         form.current,
-        `${NEXT_PUBLIC_API_KEY}`
+        `HcyMoj0YftLbS4Kso`
       )
       .then(
         () => {
