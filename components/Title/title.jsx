@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Stack from '../Stack/Stack';
 
 function Title() {
@@ -25,31 +26,39 @@ function Title() {
             <p className='text-sm text-gray-500 mb-2'>
               Connect with me on Social Media:
             </p>
-            <div className='w-full flex justify-between'>
-              <Image
-                src={'/svg/github.svg'}
-                alt='github'
-                width={36}
-                height={36}
-              />
-              <Image
-                src={'/svg/linkedIn.svg'}
-                alt='linkedIn'
-                width={36}
-                height={36}
-              />
-              <Image
-                src={'/svg/twitter.svg'}
-                alt='twitter'
-                width={36}
-                height={36}
-              />
-              <Image
-                src={'/svg/instagram.svg'}
-                alt='instagram'
-                width={36}
-                height={36}
-              />
+            <div className='w-full flex justify-between social'>
+              <a href='https://github.com/iampitrus'>
+                <Image
+                  src={'/svg/github.svg'}
+                  alt='github'
+                  width={36}
+                  height={36}
+                />
+              </a>
+              <a href='https://www.linkedin.com/in/peter-ogbonna-9889721b2/'>
+                <Image
+                  src={'/svg/linkedIn.svg'}
+                  alt='linkedIn'
+                  width={36}
+                  height={36}
+                />
+              </a>
+              <a href='https://twitter.com/Peterintech'>
+                <Image
+                  src={'/svg/twitter.svg'}
+                  alt='twitter'
+                  width={36}
+                  height={36}
+                />
+              </a>
+              <a href='https://www.instagram.com/peterintech/'>
+                <Image
+                  src={'/svg/instagram.svg'}
+                  alt='instagram'
+                  width={36}
+                  height={36}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -58,8 +67,6 @@ function Title() {
           <Image src={'/Hero_img.png'} alt='hero' width={655} height={548.29} />
         </div>
       </div>
-
-      {/* Tech Stack */}
       <Stack />
     </section>
   );
