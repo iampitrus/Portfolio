@@ -29,9 +29,6 @@
   .subheading {
     @apply text-4xl mb-8;
   }
-  .card {
-    @apply flex items-center flex-col relative cursor-pointer w-[350px];
-  }
 }
 
 input {
