@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "3D Product Website",
+    url: {
+      github: "https://github.com/iampitrus/3D-Website",
+      live: "https://3-d-website-self.vercel.app/",
+      image: "/3D-product.png",
+    },
+    id: 7,
+    description:
+      "A 3D website where you can design a shirt to your desired taste and download your design, also give you access to upload designs from your device as you please...",
+    stack: "React.js, Three.js, Tailwindcss",
+  },
+  {
     title: "Groovy",
     url: {
       github: "https://github.com/iampitrus/groovy",
@@ -50,18 +62,6 @@ export const projects = [
     description:
       "A website where you can shop footwears of different kind both for men and women",
     stack: "React.js, Styled components",
-  },
-  {
-    title: "Note Keeper",
-    url: {
-      github: "https://github.com/iampitrus/Note-Keeper-App",
-      live: "http://note-keeper-app-3ts4.vercel.app/",
-      image: "/keeper.png",
-    },
-    id: 4,
-    description:
-      "A website where you store notes from your thoughts, it comes with smooth layout animatinos",
-    stack: "React.js, Framer-motion and Material UI",
   },
   {
     title: "My Portfolio",
