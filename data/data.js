@@ -1,5 +1,30 @@
 export const projects = [
   {
+    title: "Zayth Driver App",
+    url: {
+      github: "",
+      live: "mobileapp",
+      image: "/zayth.png",
+    },
+    id: 7,
+    description:
+      "A mobile app for drivers to manage their trips and earnings. Built by integrated GPS tracking, real-time order updates, and delivery status notifications to enhance the customer experience and ensure efficient delivery operations.",
+    stack: "React Native CLI, Redux, Google Maps API, Firebase",
+  },
+
+  {
+    title: "Cryptnance",
+    url: {
+      github: "#",
+      live: "https://cryptnance-landingpage.vercel.app/",
+      image: "/cryptnance.png",
+    },
+    id: 2,
+    description:
+      "A crypto fintech web application for sending and receiving crpto and fiat funds. Built majorly with React and Redux ",
+    stack: "React.js, Redux, Tailwindcss",
+  },
+  {
     title: "3D Product Website",
     url: {
       github: "https://github.com/iampitrus/3D-Website",
@@ -35,33 +60,6 @@ export const projects = [
     description:
       "A social media app built with Material UI from ground up. The App is mobile responsive and has a switch between dark mode and light mode",
     stack: "Next.js, Material UI",
-  },
-
-  {
-    title: "Google Search clone",
-    url: {
-      github: "https://github.com/iampitrus/Google-Search-clone",
-      live: "http://google-clone-5sxy.vercel.app/",
-      image: "",
-    },
-    id: 2,
-    description:
-      "A clone to Google search, where you make searches and receive related websites, news, images and videos that match your search",
-    stack: "React.js, React Context, Tailwind Css, Rapid Api",
-  },
-
-  {
-    title: "Sneakers",
-    url: {
-      github: "https://github.com/iampitrus/ecommerce-landing-page",
-      live: "https://ecommerce-landing-page2.netlify.app/",
-      image: "/sneakers.png",
-    },
-    id: 3,
-
-    description:
-      "A website where you can shop footwears of different kind both for men and women",
-    stack: "React.js, Styled components",
   },
   {
     title: "My Portfolio",
