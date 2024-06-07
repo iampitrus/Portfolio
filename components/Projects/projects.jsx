@@ -8,10 +8,10 @@ function Projects() {
   return (
     <section id="projects" className="container-xy bg-darkBlue">
       <h2 className="text-right subheading text-white">My Projects</h2>
-      <div className="flex md:flex-row flex-col justify-between">
+      <div className="flex flex-wrap justify-center items-center md:flex-row flex-col gap-20">
         {topProject.map(({ description, title, id, url }) => (
           <Link className="card" key={id} href={`/projects/#${id}`}>
-            <div className="flex items-center flex-col relative cursor-pointer w-[350px]">
+            <div className="flex items-center flex-col relative cursor-pointer w-full md:w-[360px]">
               <div className="-mb-3 relative">
                 {" "}
                 <Image
@@ -30,9 +30,11 @@ function Projects() {
           </Link>
         ))}
       </div>
-      <Link href="/projects">
-        <button className="outline-btn mt-16">See more</button>
-      </Link>
+      <div className="w-full flex justify-center">
+        <Link href="/projects">
+          <button className="outline-btn mt-16">See more</button>
+        </Link>
+      </div>
     </section>
   );
 }

@@ -6,7 +6,7 @@ export const projects = [
       live: "mobileapp",
       image: "/zayth.png",
     },
-    id: 7,
+    id: 8,
     description:
       "A mobile app for drivers to manage their trips and earnings. Built by integrated GPS tracking, real-time order updates, and delivery status notifications to enhance the customer experience and ensure efficient delivery operations.",
     stack: "React Native CLI, Redux, Google Maps API, Firebase",
@@ -73,5 +73,3 @@ export const projects = [
     stack: "Next.js, Tailwind Css",
   },
 ];
-
-const test = [2, 4, 5, 6, 7, 2, 4];
