@@ -34,10 +34,16 @@ function Projects() {
                 />
               </div>
               <div className="flex justify-around mt-4">
-                <a href={url.github}>
+                <a
+                  className="hover:rotate-12 hover:scale-105 active:scale-95"
+                  href={url.github}
+                >
                   <GitHubIcon sx={{ color: "#06b6d4", fontSize: "2rem" }} />
                 </a>
-                <a href={url.live}>
+                <a
+                  className="hover:rotate-12 hover:scale-105 active:scale-95"
+                  href={url.live}
+                >
                   <PreviewIcon sx={{ color: "#06b6d4", fontSize: "2rem" }} />
                 </a>
               </div>
