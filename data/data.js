@@ -11,6 +11,17 @@ export const projects = [
     stack: "React and Tailwindcss",
   },
   {
+    title: "Cryptnance",
+    url: {
+      github: "#",
+      live: "webapp",
+      image: "/cryptnance.png",
+    },
+    description:
+      "A crypto fintech web application for a startup for sending and receiving crpto and fiat funds. I am the Lead Frontend Engineer handling this project. Built majorly with React and Redux ",
+    stack: "React.js, Redux, Tailwindcss",
+  },
+  {
     title: "Zayth Driver App",
     url: {
       github: "",
@@ -20,18 +31,6 @@ export const projects = [
     description:
       "A mobile app for drivers to manage their trips and earnings. Built by integrated GPS tracking, real-time order updates, and delivery status notifications to enhance the customer experience and ensure efficient delivery operations.",
     stack: "React Native CLI, Redux, Google Maps API, Firebase",
-  },
-
-  {
-    title: "Cryptnance",
-    url: {
-      github: "#",
-      live: "webapp",
-      image: "/cryptnance.png",
-    },
-    description:
-      "A crypto fintech web application for sending and receiving crpto and fiat funds. Built majorly with React and Redux ",
-    stack: "React.js, Redux, Tailwindcss",
   },
   {
     title: "3D Product Website",
