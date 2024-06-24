@@ -41,6 +41,7 @@
   display: flex;
   list-style: none;
   text-align: center;
+  align-items: center;
 }
 
 .navMenu li:nth-child(-n + 3) > a {
@@ -56,7 +57,7 @@
 }
 
 .navMenu li:after {
-  content: '';
+  content: "";
   display: block;
   height: 3px;
   width: 0;
