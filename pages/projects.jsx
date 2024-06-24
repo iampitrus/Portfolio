@@ -1,51 +1,51 @@
-import Image from 'next/image';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import PreviewIcon from '@mui/icons-material/Preview';
-import { Navbar } from '../components';
-import { projects } from '../data/data';
+import Image from "next/image";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PreviewIcon from "@mui/icons-material/Preview";
+import { Navbar } from "../components";
+import { projects } from "../data/data";
 
 function Projects() {
   return (
     <>
       <Navbar />
-      <section className='container-xy bg-darkBlue text-white'>
-        <h1 className='text-4xl text-center sm:text-left'>
+      <section className="container-xy bg-darkBlue text-white">
+        <h1 className="text-4xl text-center sm:text-left">
           Some Projects I have worked on
         </h1>
-        <p className='gray mb-20 text-center sm:text-left'>
-          A curated list of projects that I&apos;ve worked on some built as part
-          of the learning process and some open source which I contributed to
+        <p className="gray mb-20 text-center sm:text-left">
+          A curated list of projects that I&apos;ve worked on, this list
+          consists of projects built as part of the learning process, live
+          projects and open source projects which i contributed to
         </p>
-        {projects.map(({ title, description, stack, url, id }) => (
+        {projects.map(({ title, description, stack, url }, index) => (
           <div
-            key={id}
-            id={id}
+            key={index}
             className={`flex md:justify-center gap-10 items-center flex-col mb-24 ${
-              id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'
+              index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
-            <div className='w-fit'>
-              <div className='w-[400px] h-[250px] relative'>
+            <div className="w-fit">
+              <div className="w-[400px] h-[250px] relative">
                 <Image
                   src={url.image}
                   alt={title}
-                  layout='fill'
-                  objectFit='contain'
+                  layout="fill"
+                  objectFit="contain"
                 />
               </div>
-              <div className='flex justify-around mt-4'>
+              <div className="flex justify-around mt-4">
                 <a href={url.github}>
-                  <GitHubIcon sx={{ color: '#06b6d4', fontSize: '2rem' }} />
+                  <GitHubIcon sx={{ color: "#06b6d4", fontSize: "2rem" }} />
                 </a>
                 <a href={url.live}>
-                  <PreviewIcon sx={{ color: '#06b6d4', fontSize: '2rem' }} />
+                  <PreviewIcon sx={{ color: "#06b6d4", fontSize: "2rem" }} />
                 </a>
               </div>
             </div>
-            <div className='text-center md:text-left'>
-              <h2 className='text-3xl text-lightBlue'>{title}</h2>
-              <p className='my-6 md:my-12'>{description}</p>
-              <p className='gray'>Stack: {stack}</p>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl text-lightBlue">{title}</h2>
+              <p className="my-6 md:my-12">{description}</p>
+              <p className="gray">Stack: {stack}</p>
             </div>
           </div>
         ))}
