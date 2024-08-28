@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "Cryptnance",
+    url: {
+      github: "#",
+      live: "https://cryptnance.com.ng",
+      image: "/cryptnance.png",
+    },
+    description:
+      "A crypto fintech web application for a startup for sending and receiving crpto and fiat funds. I am the Lead Frontend Engineer handling this project. Built majorly with React and Redux ",
+    stack: "React.js, Redux, Tailwindcss",
+  },
+  {
     title: "Echelon Trust LTD (official website)",
     url: {
       github: "",
@@ -9,17 +20,6 @@ export const projects = [
     description:
       "A company that offers financial services inclusive of offering loans, savings, professional financial advisory and investment option. I designed and built the project from ground up",
     stack: "React and Tailwindcss",
-  },
-  {
-    title: "Cryptnance",
-    url: {
-      github: "#",
-      live: "webapp",
-      image: "/cryptnance.png",
-    },
-    description:
-      "A crypto fintech web application for a startup for sending and receiving crpto and fiat funds. I am the Lead Frontend Engineer handling this project. Built majorly with React and Redux ",
-    stack: "React.js, Redux, Tailwindcss",
   },
   {
     title: "Zayth Driver App",
