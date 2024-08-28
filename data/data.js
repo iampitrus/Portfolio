@@ -4,7 +4,7 @@ export const projects = [
     url: {
       github: "#",
       live: "https://cryptnance.com.ng",
-      image: "/cryptnance.png",
+      image: "/cryptnance-img.png",
     },
     description:
       "A crypto fintech web application for a startup for sending and receiving crpto and fiat funds. I am the Lead Frontend Engineer handling this project. Built majorly with React and Redux ",
@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Echelon Trust LTD (official website)",
     url: {
-      github: "",
+      github: "#",
       live: "https://echelontrust.com.ng/",
       image: "/echelon.png",
     },
