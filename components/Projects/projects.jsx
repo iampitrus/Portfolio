@@ -9,8 +9,8 @@ function Projects() {
     <section id="projects" className="container-xy bg-darkBlue">
       <h2 className="text-right subheading text-white">My Projects</h2>
       <div className="flex flex-wrap justify-center items-center md:flex-row flex-col gap-20">
-        {topProject.map(({ description, title, id, url }) => (
-          <Link className="card" key={id} href={`/projects/#${id}`}>
+        {topProject.map(({ description, title, url }, index) => (
+          <Link className="card" key={index} href={`/projects/#${index}`}>
             <div className="flex items-center flex-col relative cursor-pointer w-full md:w-[360px]">
               <div className="-mb-3 relative">
                 {" "}

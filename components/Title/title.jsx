@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Stack from "../Stack/Stack";
 
+export const socialLinks = {
+  github: "https://github.com/iampitrus",
+  linkedIn: "https://www.linkedin.com/in/peter-ogbonna-9889721b2/",
+  instagram: "https://www.instagram.com/peterintech/",
+  x: "https://x.com/Peterintech",
+};
+
 function Title() {
   return (
     <section id="home">
-      <div className="w-full relative pt-[7%] pb-16 container-x bg-darkBlue">
+      <div className="w-full relative nav-margin pb-16 container-x bg-darkBlue">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           <h1 className="p-0 text-4xl md:text-6xl text-white leading-tight md:leading-[1.3]">
             Hey, <br /> I am
@@ -26,7 +33,7 @@ function Title() {
               Connect with me on Social Media:
             </p>
             <div className="w-full flex justify-between social">
-              <a href="https://github.com/iampitrus">
+              <a href={socialLinks.github}>
                 <Image
                   src={"/svg/github.svg"}
                   alt="github"
@@ -34,7 +41,7 @@ function Title() {
                   height={36}
                 />
               </a>
-              <a href="https://www.linkedin.com/in/peter-ogbonna-9889721b2/">
+              <a href={socialLinks.linkedIn}>
                 <Image
                   src={"/svg/linkedIn.svg"}
                   alt="linkedIn"
@@ -42,7 +49,7 @@ function Title() {
                   height={36}
                 />
               </a>
-              <a href="https://twitter.com/Peterintech">
+              <a href={socialLinks.x}>
                 <Image
                   src={"/svg/twitter.svg"}
                   alt="twitter"
@@ -50,7 +57,7 @@ function Title() {
                   height={36}
                 />
               </a>
-              <a href="https://www.instagram.com/peterintech/">
+              <a href={socialLinks.instagram}>
                 <Image
                   src={"/svg/instagram.svg"}
                   alt="instagram"
