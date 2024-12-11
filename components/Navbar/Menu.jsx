@@ -126,6 +126,7 @@ function Menu() {
           <div className="flex flex-1 items-end justify-end">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://drive.google.com/file/d/1ozXUwhqBusP2NukdXAhsppc4gxPiEIF4/view?usp=sharing"
             >
               View CV
