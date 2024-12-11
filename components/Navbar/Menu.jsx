@@ -126,7 +126,7 @@ function Menu() {
           <div className="flex flex-1 items-end justify-end">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1F2MYW-7ApOhwbVcv5yp3XQKUPxjdiRRs/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1ozXUwhqBusP2NukdXAhsppc4gxPiEIF4/view?usp=sharing"
             >
               View CV
             </a>
